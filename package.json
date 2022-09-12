@@ -4,12 +4,11 @@
   "description": "Plutonium project-1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "author": "grp 57",
-  "contributor": "Debasish Behera, Rizwan Ansari, Indrazeet Suryavansi, Prabhas Prasad",
+  "contributor": "Debasish Behera, Rizwan Ansari, Indrajeet Suryawanshi, Prabhas Prasad",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

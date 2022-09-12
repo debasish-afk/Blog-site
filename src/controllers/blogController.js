@@ -156,9 +156,8 @@ const deletebyquery = async function (req, res) {
       
     }
    
-    let blog = {
-
-    }
+    let blog = {}
+    
     if (authorId) {
       blog.authorId = authorId
     }
@@ -173,6 +172,7 @@ const deletebyquery = async function (req, res) {
     } if (isPublished) {
       blog.isPublished = isPublished
     }
+
 
     let data = await blogModel.updateMany(blog, {
       $set: {
