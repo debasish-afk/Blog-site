@@ -190,9 +190,6 @@ const deletebyquery = async function (req, res) {
 }
 
 
-module.exports.createBlog = createBlog;
-module.exports.getBlog = getBlog;
-module.exports.updatedBlog = updatedBlog
-module.exports.deletedBlog = deletedBlog
-module.exports.deletebyquery = deletebyquery
 
+
+module.exports = {createBlog,getBlog,updatedBlog,deletedBlog,deletebyquery}

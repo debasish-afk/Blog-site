@@ -38,7 +38,7 @@ const createAuthor = async function (req, res) {
 
 
     let authorCreated = await authorModel.create(data)
-    res.status(201).send({ data: authorCreated, msg: "document is created" })
+    res.status(201).send({ status:true,data: authorCreated, msg: "document is created" })
 
   } catch (err) {
     console.log("This is the error:", err.message)
@@ -79,6 +79,4 @@ const loginUser = async function (req, res) {
 }
 
 
-
-module.exports.createAuthor = createAuthor
-module.exports.loginUser = loginUser
+module.exports = {createAuthor,loginUser}

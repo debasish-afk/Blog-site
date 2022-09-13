@@ -46,11 +46,4 @@ const validAuthorTitle = function (value) {
     }
 }
 
-// module.exports.isValidObjectId = isValidObjectId
-// module.exports.isValidEmail = isValidEmail
-// module.exports.isValidPassword = isValidPassword
-// module.exports.validChar = validChar
-// module.exports.validBlogTitle = validBlogTitle
-// module.exports.validAuthorTitle = validAuthorTitle
-
 module.exports={isValidObjectId,isValidEmail,isValidPassword,validChar,validBlogTitle,validAuthorTitle}
