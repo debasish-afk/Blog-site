@@ -189,7 +189,4 @@ const deletebyquery = async function (req, res) {
   }
 }
 
-
-
-
 module.exports = {createBlog,getBlog,updatedBlog,deletedBlog,deletebyquery}
