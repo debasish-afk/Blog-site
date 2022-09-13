@@ -18,7 +18,7 @@ const createBlog = async function (req, res) {
     if(!VALIDATOR.validBlogTitle(blog.title)) return res.status(400).send({msg:"title is not valid"})
 
     let blogCreated = await blogModel.create(blog)
-    return res.status(201).send({ data: blogCreated ,msg:"Blog document created"})
+    return res.status(201).send({ status: true,data: blogCreated ,msg:"Blog document created"})
 
   } catch (err) {
     console.log("This is the error:", err.message)
