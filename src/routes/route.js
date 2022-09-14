@@ -18,6 +18,6 @@ router.delete("/blogs/:blogId",middlewear.authentication,middlewear.authorisatio
 
 router.delete("/blogs",middlewear.authentication,blogController.deletebyquery)
 
-router.post("/loginUser",authorController.loginUser)
+router.post("/login",authorController.loginUser)
 
 module.exports = router;

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const blogModel = require("../models/blogModel")
 const VALIDATOR = require("../validator/validate")
 
@@ -98,7 +98,7 @@ const updatedBlog = async function (req, res) {
       new: true,
     });
     
-    res.status(200).send({ status:true,data: updateData,msg:"Blog updated" });
+    res.status(200).send({ status:true,data:updateData,message:"Blog updated" });
   } catch (err) {
     res.status(500).send({ msg: "Error", error: err.message });
   }

@@ -69,8 +69,8 @@ const loginUser = async function (req, res) {
       },
       "project-1"
     );
-    res.status(200).send({ status: true, token: token });
-    console.log(token)
+    res.status(201).send({ status: true, data:{ token:token} });
+  
   } catch (err) {
     console.log("This is the error:", err.message)
     res.status(500).send({ msg: "Error", error: err.message })
