@@ -1,6 +1,6 @@
-.# Radon
+.# Plutonium
 
-Repository for backend cohort - Radon
+Repository for backend cohort - Plutonium
 
 ## Blogging Site Mini Project Requirement
 
